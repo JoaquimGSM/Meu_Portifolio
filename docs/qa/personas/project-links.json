@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Zeryon",
+    "url": "https://web-dev-sprint3-zeryon.vercel.app/",
+    "error": "page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://web-dev-sprint3-zeryon.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://web-dev-sprint3-zeryon.vercel.app/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "checkedAt": "2026-11-16T20:11:21.595Z"
+  },
+  {
+    "name": "Naruto Connections",
+    "url": "https://naruto-connections.vercel.app/",
+    "error": "page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://naruto-connections.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://naruto-connections.vercel.app/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "checkedAt": "2026-11-16T20:11:30.922Z"
+  },
+  {
+    "name": "Entrear",
+    "url": "https://entrear.vercel.app/",
+    "error": "page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://entrear.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://entrear.vercel.app/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "checkedAt": "2026-11-16T20:11:40.245Z"
+  },
+  {
+    "name": "Lâmina",
+    "url": "https://lamina-chi.vercel.app/",
+    "error": "page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://lamina-chi.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://lamina-chi.vercel.app/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "checkedAt": "2026-11-16T20:11:49.547Z"
+  }
+]

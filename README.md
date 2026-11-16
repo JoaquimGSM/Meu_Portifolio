@@ -1,142 +1,97 @@
-# Portfólio de Joaquim Moura
+﻿# Joaquim Moura — Três versões de mim
 
-Portfólio pessoal em português de Joaquim Gaspardo Souza Moura, estudante de Engenharia de Software na FIAP (2026–2029). Desenvolvido a partir de `PROMPT_MESTRE.md`, com personagem aprovado, conteúdo verificado e identidade roxo/amarelo/cinza.
+Portfólio pessoal em React, TypeScript e Vite. Sound, Impact e Court transformam a atmosfera da página em torno dos três GIFs originais: guitarrista, boxeador e tenista.
 
-## Executar localmente
+A reformulação segue `PROMPT_MESTRE_CODEX.md`. Foram implementados e comparados três conceitos; a direção escolhida e os refinamentos estão em [DIRECAO_ARTISTICA.md](DIRECAO_ARTISTICA.md).
 
-Requer **Node.js 22.12+** (validado em Node 24) e npm.
+## Executar
+
+Requer Node.js 22.12+ e npm; validado com Node 24 no Windows.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Abra a URL indicada pelo Vite, normalmente `http://127.0.0.1:5173`.
-
-No PowerShell com execução de scripts bloqueada, use `npm.cmd` no lugar de `npm`; não é necessário alterar a política de execução do Windows.
+Abra a URL informada pelo Vite, normalmente http://127.0.0.1:5173. No PowerShell com scripts bloqueados, use `npm.cmd` em todos os comandos; não é preciso mudar a política do Windows.
 
 ```bash
 npm run typecheck
 npm run lint
 npm run build
-npm run preview
-```
-
-`dist/` contém a aplicação estática para publicação. Não há servidor de aplicação, banco, variáveis secretas, formulário com envio ou analytics.
-
-## Stack e experiência
-
-- React 19 + TypeScript + Vite; CSS organizado por componentes e tokens.
-- Syne + DM Sans variáveis e hospedadas localmente, com licença OFL.
-- WebP animado aprovado no hero, pausa manual e automática fora da viewport; PNG aprovado para movimento reduzido.
-- Navegação por âncoras, menu móvel e cinco cases em diálogos nativos com Escape, ciclo de foco e retorno ao controle de origem.
-- Quatro grupos: Zeryon; Naruto Connections; Cityzer; desenvolvimento web independente com Entrear e Lâmina.
-- Capturas reais dos quatro projetos publicados. Cityzer usa uma composição tipográfica, sem inventar mapa, imagem ou link.
-- Entradas breves, revelação pontual das imagens, feedback de hover/foco e rolagem nativa. Sem GSAP no portfólio: CSS e IntersectionObserver atendem à proposta.
-- SEO básico, favicon e imagem OG. Configure o domínio e as URLs OG absolutas ao publicar; não há domínio inventado no código.
-
-## Direção de arte dos fundos
-
-A revisão visual acrescenta uma abertura perolada com refração ametista, galeria iluminada, uma atmosfera uva para Naruto, horizonte abstrato em Cityzer, molduras quentes/frias nos estudos web, painéis translúcidos em Sobre e um encerramento violeta com CTA amarelo. O personagem e as capturas originais continuam preservados.
-
-`src/atmosphere.css` concentra os fundos, materiais e a adaptação dessas composições ao mobile. `Atmosphere.tsx` contém apenas formas decorativas próprias em CSS/SVG; não há nova dependência, imagem de fundo externa, canvas ou loop contínuo. As entradas são breves e respeitam movimento reduzido.
-
-Compare as iterações e a validação em [docs/qa/ATMOSPHERES.md](docs/qa/ATMOSPHERES.md). Para refazer as capturas dessa revisão, com o preview na porta 4173 e o build atual:
-
-```bash
-npm run qa:atmospheres
-```
-
-O comando também atualiza `public/og-cover.jpg`; faça um novo build antes de publicar.
-
-## Estrutura
-
-```text
-assets/                   Originais aprovados, preservados
-public/personagem/        Cópias idênticas utilizadas pela aplicação
-public/projects/          Capturas reais dos deploys
-public/og-cover.jpg        Captura real da abertura para compartilhamento
-src/components/           Hero, header, projetos, cases, sobre e contato
-src/data/projects.ts      Conteúdo e links tipados de todos os cases
-src/hooks/                Preferência de movimento e observação de imagens
-src/utils/                Ciclo de foco dos diálogos
-src/styles.css            Sistema visual e breakpoints
-src/atmosphere.css        Fundos, formas, luz e materiais
-tests/                    Testes de navegação, acessibilidade e responsividade
-scripts/                  Capturas e verificações reproduzíveis
-docs/DESIGN.md            Direção de arte e decisões das skills
-docs/PROJECT_RESEARCH.md  Fatos, fontes e limites da verificação
-docs/qa/                  Capturas antes/depois e resultados de testes
-```
-
-## Testes e capturas
-
-```bash
-npm run build
 npm test
 npm run verify:assets
 ```
 
-Playwright usa **Microsoft Edge instalado** (`channel: msedge`) para evitar baixar outro navegador. Em um sistema sem Edge, instale-o pelo Playwright com `npx playwright install msedge` ou ajuste `playwright.config.ts` para Chromium e execute `npx playwright install chromium`. No Linux/macOS, a configuração seleciona `npm`, no Windows `npm.cmd`.
+O teste inicia um preview local na porta 4173, ou reutiliza um já aberto. Faça o build antes de testar. Playwright usa o Microsoft Edge instalado (`channel: msedge`). Para outro ambiente, ajuste esse canal ou instale o navegador necessário.
 
-Os testes iniciam o preview automaticamente em `http://127.0.0.1:4173`; se já houver um preview nessa porta, ele é reutilizado. Faça o build antes para testar os arquivos atuais.
+## Experiência
 
-Para repetir a revisão visual, mantenha o preview rodando nessa porta e execute:
+- Uma abertura pessoal com assinatura tipográfica, personagem animado e seletor integrado.
+- Sound: uva, amarelo e recortes elétricos; Impact: lilás, azul e planos dourados; Court: verdes, trajetórias e marcações curvas.
+- Trocas interrompíveis, sem recarregar ou alterar a disposição do conteúdo. Acesso ao seletor também pelo cabeçalho fixo.
+- Preferência persistida com fallback seguro e restauração no head antes do React.
+- Apenas o GIF ativo anima. Pôsteres dos primeiros frames originais aparecem nas miniaturas, na pausa e com movimento reduzido. O personagem também pausa fora da viewport ou com a aba oculta.
+- Galeria visual de cinco projetos, com quatro capturas reais e links. Cityzer usa arte abstrata e status de desenvolvimento; Entrear e Lâmina são websites demonstrativos.
+- Apresentação curta e acessos diretos a GitHub e LinkedIn.
+- Fontes locais Syne e DM Sans, Georgia para anotações, CSS/SVG para cenografia. Sem dependência nova, áudio, formulário ou analytics.
 
-```bash
-node scripts/capture-portfolio.mjs final
-node scripts/performance.mjs
+## Estrutura e edição
+
+```text
+public/personagens/        Três GIFs aprovados e pôsteres derivados
+public/projects/          Quatro capturas reais já verificadas
+public/og-cover.jpg        Captura real da nova abertura
+src/data/personas.ts       Nomes, caminhos e ritmo de cada persona
+src/context/              Seleção global e persistência
+src/components/           Personagem, seletor, cenografia, galeria e navegação
+src/data/projects.ts      Dados únicos dos projetos e redes oficiais
+src/styles.css            Paletas semânticas, composição, movimento e breakpoints
+explorations/             Três protótipos isolados, apenas no servidor de desenvolvimento
+tests/personas.spec.ts    Interações, responsividade, GIFs e auditoria axe
+scripts/                  Capturas e verificações reproduzíveis
+docs/qa/personas/          Evidências desta reformulação
 ```
 
-As capturas ficam em `docs/qa/final/`; os registros iniciais e de refinamento ficam em `before/` e `refined/`. Capturas e testes não entram no bundle. O relatório `docs/qa/REPORT.md` documenta medidas, correções e limites. Testes automáticos não substituem uma revisão humana com leitores de tela e dispositivos físicos.
+Os campos `description` e `technologies` permanecem vazios nos projetos. Não há descrições, cases ou tecnologias na interface. Para editar um projeto, altere seu objeto em `src/data/projects.ts` e use uma imagem real em `public/projects/`.
 
-O script de capturas também renova `public/og-cover.jpg`. Rode `npm run build` novamente para incluir essa imagem atualizada em `dist/`.
+Para publicar Cityzer quando houver uma versão confirmada: atualize `status`, `image`, `imageAlt` e `url` no objeto `cityzer`. O mesmo componente passa a mostrar a captura com link. Atualize as evidências em `docs/PROJECT_RESEARCH.md` e o teste que hoje exige ausência de screenshot/link. Não há mudança de status baseada na data.
 
-`scripts/capture-projects.mjs` acessa os quatro deploys públicos para refazer as capturas originais; depende de rede e pode produzir imagens diferentes se os sites forem atualizados. Não o execute por rotina antes de cada build.
+Os GIFs são os arquivos exatos do kit `kit_codex_portfolio_3_personagens.zip`. O boxeador conserva o fundo lilás e o tenista conserva o preto, integrados ao enquadramento. Nenhum filtro, blend ou remoção de fundo foi aplicado. `verify:assets` verifica SHA-256 e nove frames por arquivo. Os assets aprovados anteriores continuam preservados em `assets/` e `public/personagem/`.
 
-## Atualizar Cityzer em 19/11/2026
+A interface anterior está arquivada em `docs/archive/interface-anterior/`. Seus relatórios históricos em `docs/qa/` e `docs/DESIGN.md` não descrevem a versão atual.
 
-Edite apenas o objeto com `id: 'cityzer'` em `src/data/projects.ts`:
+## Capturas e revisão
 
-1. Confirme o funcionamento da versão publicada, as tecnologias e os créditos da equipe.
-2. Troque `status` de `development` para `published`.
-3. Atualize `summary`, `objective`, `solution`, `contribution`, `note` e `technologies` com fatos verificáveis.
-4. Adicione `demo` e, se confirmado, `repository` com URLs reais.
-5. Salve uma captura real em `public/projects/cityzer.jpg`; informe `image` e `imageAlt` no objeto.
-6. Remova `updateDate` ou atualize a informação se ainda houver previsão futura.
-7. Registre as fontes em `docs/PROJECT_RESEARCH.md` e rode os checks novamente. Atualize o teste que hoje garante ausência de imagem/link e rótulo “Em desenvolvimento”.
+Com o build atualizado e `npm run preview -- --port 4173 --strictPort` em execução:
 
-O mesmo componente passa a mostrar a captura no lugar da composição tipográfica. Não há publicação automática nem mudança de status baseada na data: a confirmação é manual.
+```bash
+npm run qa:screenshots
+node scripts/performance.mjs docs/qa/personas/final/performance.json
+```
 
-## Publicar manualmente na Vercel
+As capturas reais ficam em `docs/qa/personas/final/`, cobrindo os três mundos em 1440, 1280, 768 e 360 px. O comando também renova `public/og-cover.jpg`; faça um novo build para incluir essa imagem no `dist/`.
 
-Nenhum commit, push, registro de Site ou deploy foi executado nesta entrega.
+Os protótipos podem ser abertos no servidor de desenvolvimento:
 
-Quando aprovar o projeto, importe seu repositório na Vercel, selecione Vite e configure:
+- `/explorations/?concept=playground`
+- `/explorations/?concept=zine`
+- `/explorations/?concept=worlds`
 
-- Install command: `npm ci`
-- Build command: `npm run build`
-- Output directory: `dist`
-- Node.js: 22 ou 24
+`npm run qa:concepts` captura os protótipos e requer o dev na porta 5173. Eles não fazem parte do build de produção. `npm run qa:posters` também usa esse servidor e deriva novamente o primeiro frame dos GIFs via ImageDecoder; não modifica os originais.
 
-Depois de definir o domínio, acrescente `canonical`, `og:url` e uma URL absoluta para `og:image` em `index.html`. A navegação usa âncoras e não exige regra de reescrita de rotas. A publicação pode ser feita pela interface da Vercel; nenhuma credencial faz parte do projeto.
+Resultado e limitações: [relatório atual](docs/qa/personas/REPORT.md). A verificação automática não substitui a revisão humana em leitores de tela ou em dispositivos físicos.
 
-## Honestidade e créditos
+`scripts/capture-projects.mjs` acessa os deploys públicos para renovar imagens e depende de rede; as capturas existentes foram mantidas. Não é necessário executá-lo a cada build.
 
-Zeryon é trabalho acadêmico em equipe: **Joaquim Gaspardo, Kelso Oliveira, Gabriel Flausino, Felipe Kenji e Gustavo Ducatti**, conforme o README público. A divisão individual de funcionalidades não foi presumida. Naruto é projeto pessoal com autoria confirmada no repositório.
+## Dados e créditos
 
-Entrear e Lâmina são empresas fictícias e protótipos demonstrativos; não representam clientes, contratos ou resultados comerciais. Seus repositórios não foram identificados e os botões de código foram omitidos. Astro, GSAP/ScrollTrigger e WebGL foram identificados conforme o caso; TypeScript/OGL de Lâmina não foram inferidos do bundle.
+Joaquim Gaspardo Souza Moura, Engenharia de Software na FIAP, 2026–2029: informações fornecidas pelo autor. Links oficiais: [GitHub](https://github.com/JoaquimGSM) e [LinkedIn](https://www.linkedin.com/in/joaquimgsm).
 
-Não foi encontrado e-mail público. O contato usa somente LinkedIn e GitHub fornecidos. Python, Node.js, APIs e outras competências sem evidência específica nos projetos selecionados não foram adicionadas como conquistas. TypeScript é utilizado neste próprio portfólio.
+A pesquisa anterior dos projetos foi preservada em [docs/PROJECT_RESEARCH.md](docs/PROJECT_RESEARCH.md). Zeryon é acadêmico e em equipe; não foi atribuída autoria individual a todas as funcionalidades. Entrear e Lâmina representam empresas fictícias e não clientes comerciais. Não há e-mail, métricas, experiências profissionais ou tecnologias inventadas. Licenças e origem das imagens: [docs/LICENSES.md](docs/LICENSES.md).
 
-Fontes completas, hashes e limites: [pesquisa](docs/PROJECT_RESEARCH.md), [licenças](docs/LICENSES.md), [direção visual](docs/DESIGN.md) e [QA](docs/qa/REPORT.md).
+## Publicação manual posterior
 
-## Cinco mensagens de commit sugeridas
+A aplicação estática é gerada em `dist/`. Para uma publicação manual na Vercel: preset Vite, instalação `npm ci`, build `npm run build`, saída `dist`, Node 22 ou 24. Depois de escolher o domínio, configure canonical, og:url e a URL absoluta de og:image em `index.html`.
 
-Sugestões para você usar após a revisão; nenhum commit foi executado:
-
-1. `chore: configurar React, TypeScript e Vite para o portfólio`
-2. `feat: criar identidade visual e abertura com personagem aprovado`
-3. `feat: apresentar projetos verificados e cases acessíveis`
-4. `feat: implementar navegação responsiva e controle de movimento`
-5. `test: validar acessibilidade, responsividade e documentar entrega`
+Nenhum commit, push ou deploy faz parte desta entrega.
