@@ -1,0 +1,107 @@
+{
+  "environment": "Edge Chromium headless, localhost, cache desabilitado, CPU 4x, viewport 390x844. Medição de laboratório; não é Lighthouse nem dados de usuários reais.",
+  "metrics": {
+    "lcp": 684,
+    "cls": 0.000008702407938863769,
+    "domContentLoaded": 143.5,
+    "load": 146.30000000074506,
+    "transferBytes": 1024446,
+    "resources": [
+      {
+        "name": "/assets/index-wFnmiddm.js",
+        "transferSize": 73347,
+        "duration": 9.099999997764826
+      },
+      {
+        "name": "/assets/index-BCd3TUTu.css",
+        "transferSize": 5701,
+        "duration": 3.100000001490116
+      },
+      {
+        "name": "/personagens/guitarrista-poster.png",
+        "transferSize": 93042,
+        "duration": 3.399999998509884
+      },
+      {
+        "name": "/personagens/boxeador-poster.png",
+        "transferSize": 140191,
+        "duration": 3.300000000745058
+      },
+      {
+        "name": "/personagens/tenista-poster.png",
+        "transferSize": 94333,
+        "duration": 3.099999997764826
+      },
+      {
+        "name": "/assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2",
+        "transferSize": 37232,
+        "duration": 2.399999998509884
+      },
+      {
+        "name": "/assets/press-start-2p-latin-400-normal-_wFEWmAB.woff2",
+        "transferSize": 12812,
+        "duration": 2.199999999254942
+      },
+      {
+        "name": "/projects/zeryon.jpg",
+        "transferSize": 50188,
+        "duration": 4
+      },
+      {
+        "name": "/projects/naruto.jpg",
+        "transferSize": 61511,
+        "duration": 3.800000000745058
+      },
+      {
+        "name": "/projects/entrear.jpg",
+        "transferSize": 144173,
+        "duration": 3.5
+      },
+      {
+        "name": "/personagens/guitarrista.gif",
+        "transferSize": 310020,
+        "duration": 3.5
+      },
+      {
+        "name": "/favicon.svg",
+        "transferSize": 553,
+        "duration": 2.199999999254942
+      }
+    ]
+  },
+  "switches": [
+    {
+      "persona": "boxeador",
+      "sampledFrames": 48,
+      "approximateFps": 55.6070435588508,
+      "medianFrameMs": 16.699999999999818,
+      "p95FrameMs": 16.800000000000182,
+      "longestFrameMs": 66.59999999999991,
+      "stableScroll": true,
+      "stableHeight": true,
+      "activeGifs": 1
+    },
+    {
+      "persona": "tenista",
+      "sampledFrames": 52,
+      "approximateFps": 60.35283194062786,
+      "medianFrameMs": 16.699999999999818,
+      "p95FrameMs": 16.799999999999727,
+      "longestFrameMs": 16.800000000000182,
+      "stableScroll": true,
+      "stableHeight": true,
+      "activeGifs": 1
+    },
+    {
+      "persona": "guitarrista",
+      "sampledFrames": 52,
+      "approximateFps": 60.24096385557765,
+      "medianFrameMs": 16.699999999999818,
+      "p95FrameMs": 16.800000000000182,
+      "longestFrameMs": 16.800000000000182,
+      "stableScroll": true,
+      "stableHeight": true,
+      "activeGifs": 1
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { chromium } from '@playwright/test';
 import { writeFile } from 'node:fs/promises';
 
-const outputPath = process.argv[2] ?? 'docs/qa/personas/final/performance.json';
+const outputPath = process.argv[2] ?? 'docs/qa/pixel/final/performance.json';
 const browser = await chromium.launch({ channel: 'msedge', headless: true });
 try {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });

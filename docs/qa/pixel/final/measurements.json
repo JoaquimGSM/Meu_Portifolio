@@ -1,0 +1,146 @@
+[
+  {
+    "persona": "guitarrista",
+    "width": 1440,
+    "pageWidth": 1440,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 1440,
+    "pageWidth": 1440,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 1440,
+    "pageWidth": 1440,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "guitarrista",
+    "width": 1280,
+    "pageWidth": 1280,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 1280,
+    "pageWidth": 1280,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 1280,
+    "pageWidth": 1280,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "guitarrista",
+    "width": 1024,
+    "pageWidth": 1024,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 1024,
+    "pageWidth": 1024,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 1024,
+    "pageWidth": 1024,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "guitarrista",
+    "width": 768,
+    "pageWidth": 768,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 768,
+    "pageWidth": 768,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 768,
+    "pageWidth": 768,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "guitarrista",
+    "width": 390,
+    "pageWidth": 390,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 390,
+    "pageWidth": 390,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 390,
+    "pageWidth": 390,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "guitarrista",
+    "width": 320,
+    "pageWidth": 320,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "boxeador",
+    "width": 320,
+    "pageWidth": 320,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  },
+  {
+    "persona": "tenista",
+    "width": 320,
+    "pageWidth": 320,
+    "errors": [],
+    "brokenImages": [],
+    "animatedImages": 1
+  }
+]

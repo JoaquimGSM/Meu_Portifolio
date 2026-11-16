@@ -36,5 +36,5 @@ for (const [id, hash] of Object.entries(approved)) {
   assert.equal(poster.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
   results.push({ id, unchanged: true, sha256, bytes: file.length, frames: 9, width: file.readUInt16LE(6), height: file.readUInt16LE(8), posterBytes: poster.length });
 }
-await writeFile('docs/qa/personas/verified-assets.json', JSON.stringify(results, null, 2));
+await writeFile('docs/qa/pixel/verified-assets.json', JSON.stringify(results, null, 2));
 console.log('3 GIFs idênticos aos aprovados; 9 frames por personagem; 3 pôsteres PNG.');

@@ -3,12 +3,12 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const round = process.argv[2] ?? 'final';
 const baseURL = process.argv[3] ?? 'http://127.0.0.1:4173';
-const folder = `docs/qa/personas/${round}`;
+const folder = `docs/qa/pixel/${round}`;
 await mkdir(folder, { recursive: true });
 const browser = await chromium.launch({ channel: 'msedge', headless: true });
 const results = [];
 try {
-  const sizes = round === 'final' ? [[1440, 1000], [1280, 800], [768, 1024], [360, 800]] : [[1440, 1000], [360, 800]];
+  const sizes = round === 'final' ? [[1440, 900], [1280, 800], [1024, 768], [768, 1024], [390, 844], [320, 800]] : [[1440, 900], [360, 800]];
   for (const [width, height] of sizes) {
     for (const id of ['guitarrista', 'boxeador', 'tenista']) {
       const page = await browser.newPage({ viewport: { width, height } });

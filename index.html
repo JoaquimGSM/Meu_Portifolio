@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#21132F" />
+    <meta name="theme-color" content="#6410c9" />
     <script>
       (() => {
         try {
           const selected = localStorage.getItem('joaquim:persona:v1');
-          const colors = { guitarrista: '#21132f', boxeador: '#ead9f3', tenista: '#123c2d' };
+          const colors = { guitarrista: '#6410c9', boxeador: '#f6c934', tenista: '#165a40' };
           if (Object.prototype.hasOwnProperty.call(colors, selected)) {
             document.documentElement.dataset.persona = selected;
             document.querySelector('meta[name="theme-color"]').content = colors[selected];
@@ -16,13 +16,13 @@
         } catch { /* Default world remains available if storage is blocked. */ }
       })();
     </script>
-    <style>html{background:#21132f;color:#f4edf8}html[data-persona="boxeador"]{background:#ead9f3;color:#274c9b}html[data-persona="tenista"]{background:#123c2d;color:#f4f7ee}</style>
-    <meta name="description" content="Três versões de Joaquim Moura: guitarra, boxe e tênis. Um arquivo pessoal de projetos e experiências digitais. Engenharia de Software na FIAP." />
+    <style>html{background:#6410c9;color:#fff6e2}html[data-persona="boxeador"]{background:#f6c934;color:#192957}html[data-persona="tenista"]{background:#165a40;color:#f4f7ee}</style>
+    <meta name="description" content="Portfólio de Joaquim Moura. Engenharia de Software na FIAP, 2026–2029. Projetos de desenvolvimento de software e front-end." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <title>Joaquim Moura — Três versões de mim</title>
-    <meta property="og:title" content="Joaquim Moura — Três versões de mim" />
-    <meta property="og:description" content="Guitarra, boxe, tênis e um arquivo pessoal de projetos digitais." />
+    <title>Joaquim Moura — Portfólio</title>
+    <meta property="og:title" content="Joaquim Moura — Portfólio" />
+    <meta property="og:description" content="Engenharia de Software — FIAP. Desenvolvimento de software e front-end." />
     <meta property="og:image" content="/og-cover.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

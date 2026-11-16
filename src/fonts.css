@@ -1,10 +1,10 @@
-/* Syne and DM Sans, self-hosted. SIL Open Font License, see docs/LICENSES.md. */
+/* Fonts are self-hosted. SIL Open Font License, see docs/LICENSES.md. */
 @font-face {
-  font-family: 'Syne Variable';
+  font-family: 'Press Start 2P';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 400;
   font-display: swap;
-  src: url('@fontsource-variable/syne/files/syne-latin-wght-normal.woff2') format('woff2');
+  src: url('@fontsource/press-start-2p/files/press-start-2p-latin-400-normal.woff2') format('woff2');
 }
 @font-face {
   font-family: 'DM Sans Variable';

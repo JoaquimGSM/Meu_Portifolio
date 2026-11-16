@@ -4,6 +4,7 @@ import { personas, personaIds } from '../data/personas';
 import type { PersonaId } from '../data/personas';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { PauseIcon } from './Icons';
+import { WorldScenery } from './WorldScenery';
 
 function CharacterImage({ id, animated }: { id: PersonaId; animated: boolean }) {
   const [ready, setReady] = useState(false);
@@ -32,9 +33,9 @@ export function CharacterStage() {
     return () => { observer.disconnect(); document.removeEventListener('visibilitychange', onVisibility); };
   }, []);
   return <div className="character-stage" ref={stage}>
-    <div className="character-window">{personaIds.map((id) => <div className={`character-layer character-${id}`} key={id} aria-hidden={persona !== id} data-active={persona === id}>
+    <div className="character-scene"><WorldScenery /><div className="character-window">{personaIds.map((id) => <div className={`character-layer character-${id}`} key={id} aria-hidden={persona !== id} data-active={persona === id}>
       <CharacterImage key={`${id}-${persona === id && !paused && !reducedMotion && visible && pageVisible}`} id={id} animated={persona === id && !paused && !reducedMotion && visible && pageVisible} />
-    </div>)}</div>
-    <div className="character-meta"><span>{personas[persona].interest}</span>{!reducedMotion ? <button className="character-pause" type="button" aria-pressed={paused} aria-label={paused ? 'Reproduzir personagem' : 'Pausar personagem'} onClick={togglePause}><PauseIcon paused={paused} /><span>{paused ? 'Reproduzir' : 'Pausar'}</span></button> : <span>Movimento reduzido</span>}</div>
+    </div>)}</div></div>
+    <div className="character-meta"><span>Animação</span>{!reducedMotion ? <button className="character-pause" type="button" aria-pressed={paused} aria-label={paused ? 'Reproduzir personagem' : 'Pausar personagem'} onClick={togglePause}><PauseIcon paused={paused} /><span>{paused ? 'Reproduzir' : 'Pausar'}</span></button> : <span>Movimento reduzido</span>}</div>
   </div>;
 }

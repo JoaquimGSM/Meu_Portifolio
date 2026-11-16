@@ -1,0 +1,32 @@
+[
+  {
+    "id": "guitarrista",
+    "unchanged": true,
+    "sha256": "22b346e982e72f8125e115271c8f5b9488f5e4cd7e0451eb765e2b6b3343cb69",
+    "bytes": 309720,
+    "frames": 9,
+    "width": 414,
+    "height": 414,
+    "posterBytes": 92742
+  },
+  {
+    "id": "boxeador",
+    "unchanged": true,
+    "sha256": "4a01e9bfb0a6ff1078b84cd50dd0ce59d6311cb3eb0ea36a3c786e219e99a0b0",
+    "bytes": 498404,
+    "frames": 9,
+    "width": 408,
+    "height": 398,
+    "posterBytes": 139891
+  },
+  {
+    "id": "tenista",
+    "unchanged": true,
+    "sha256": "8e4b9f9cfa328ebe2134090dc66edf0fe3a3042baab85ca591d91fb2b547c215",
+    "bytes": 308448,
+    "frames": 9,
+    "width": 413,
+    "height": 414,
+    "posterBytes": 94033
+  }
+]

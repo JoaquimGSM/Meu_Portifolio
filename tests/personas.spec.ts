@@ -5,9 +5,9 @@ import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 
 const worlds = [
-  ['guitarrista', '01 Sound Guitarrista'],
-  ['boxeador', '02 Impact Boxeador'],
-  ['tenista', '03 Court Tenista'],
+  ['guitarrista', 'Guitarrista'],
+  ['boxeador', 'Boxeador'],
+  ['tenista', 'Tenista'],
 ] as const;
 const storageKey = 'joaquim:persona:v1';
 const mainSelector = (page: Page) => page.locator('.world-selector-row');
@@ -22,7 +22,7 @@ async function choose(page: Page, index: number, animated = true) {
   if (animated) await expect(page.locator(`.character-${id} img`)).toHaveAttribute('src', `/personagens/${id}.gif`);
 }
 
-for (const width of [320, 360, 768, 1280, 1440]) {
+for (const width of [320, 360, 768, 1024, 1280, 1440]) {
   test(`três mundos e galeria visual em ${width}px`, async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', (error) => errors.push(error.message));
@@ -66,7 +66,11 @@ test('trocas rápidas preservam scroll e geometria sem recarregar', async ({ pag
   const before = await measure();
   let navigations = 0;
   page.on('framenavigated', (frame) => { if (frame === page.mainFrame()) navigations++; });
-  for (const index of [1, 2, 0, 1, 0, 2, 1, 2]) await mainSelector(page).getByRole('button', { name: worlds[index][1], exact: true }).click();
+  for (const index of [1, 2, 0, 1, 0, 2, 1, 2]) {
+    const bounds = await mainSelector(page).getByRole('button', { name: worlds[index][1], exact: true }).boundingBox();
+    if (!bounds) throw new Error('Personagem fora da viewport');
+    await page.mouse.click(bounds.x + bounds.width / 2, bounds.y + bounds.height / 2);
+  }
   await settle(page);
   await expect(page.locator('.character-tenista img')).toHaveAttribute('src', '/personagens/tenista.gif');
   await expect(page.locator('.persona-option[aria-pressed="true"]')).toHaveCount(2);
@@ -83,7 +87,7 @@ test('persistência e restauração no head antes de carregar o React', async ({
   await page.route('**/assets/*.js', (route) => route.abort());
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-persona', 'boxeador');
-  expect(await page.locator('html').evaluate((element) => getComputedStyle(element).backgroundColor)).toBe('rgb(234, 217, 243)');
+  expect(await page.locator('html').evaluate((element) => getComputedStyle(element).backgroundColor)).toBe('rgb(246, 201, 52)');
 });
 
 test('armazenamento bloqueado mantém seleção funcional', async ({ page }) => {
@@ -193,4 +197,22 @@ test('arquivos servidos preservam os três GIFs aprovados', async ({ request }) 
     expect(response.ok()).toBe(true);
     expect(await response.body()).toEqual(original);
   }
+});
+
+test('hero direto, redes no card e conteúdo idêntico entre personagens', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Joaquim\s*Moura/);
+  await expect(page.locator('.hero-copy')).toContainText('Engenharia de Software');
+  await expect(page.locator('.hero-copy')).toContainText('2026–2029');
+  await expect(page.locator('.card-socials a')).toHaveCount(2);
+  expect(await page.locator('.card-socials a').evaluateAll((links) => links.map((link) => link.getAttribute('href')))).toEqual(['https://github.com/JoaquimGSM', 'https://www.linkedin.com/in/joaquimgsm']);
+  expect(await page.locator('main > section').evaluateAll((sections) => sections.map((section) => section.id))).toEqual(['inicio', 'projetos', 'sobre']);
+  const content = () => page.locator('.hero-copy, #projetos, #sobre, footer').allTextContents();
+  const initial = await content();
+  for (let index = 0; index < worlds.length; index++) {
+    await choose(page, index);
+    expect(await content()).toEqual(initial);
+  }
+  await expect(page.locator('body')).not.toContainText(/arquivo de projetos|seleção pessoal|três versões de mim|qual versão|fora da tela|um pouco de|por aqui|meu universo/i);
+  expect(await page.evaluate(() => document.fonts.check('12px "Press Start 2P"'))).toBe(true);
 });

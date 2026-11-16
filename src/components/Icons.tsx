@@ -1,5 +1,5 @@
 export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d={diagonal ? 'M6 18 18 6M6 6h12v12' : 'M4 12h16m-6-6 6 6-6 6'} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+  return <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" shapeRendering="crispEdges" aria-hidden="true"><path d={diagonal ? 'M6 2h12v12h-3V8h-3v3H9v3H6v3H3v-3h3v-3h3V8h3V5H6z' : 'M10 2h3v3h3v3h3v4h-3v3h-3v3h-3v-6H1V8h9V5z'} /></svg>;
 }
 
 export function PauseIcon({ paused }: { paused: boolean }) {
