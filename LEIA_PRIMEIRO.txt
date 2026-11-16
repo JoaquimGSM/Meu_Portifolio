@@ -1,0 +1,9 @@
+PORTFÓLIO JOAQUIM — KIT PARA CODEX
+
+1. Extraia esta pasta em um novo workspace do VS Code.
+2. Abra esta pasta no VS Code e inicie o Codex.
+3. Envie ao Codex: "Leia integralmente PROMPT_MESTRE.md e execute o projeto completo. Os arquivos do personagem estão em assets/. Não faça commits, push ou deploy."
+4. O Codex deve visitar e verificar os sites e repositórios citados no briefing, quando o ambiente permitir.
+5. O próprio usuário realiza os commits e o deploy quando aprovar.
+
+Os assets do guitarrista possuem fundo transparente. A versão WebP é animada. O PNG é um quadro estático de acessibilidade.

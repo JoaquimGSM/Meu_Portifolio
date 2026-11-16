@@ -1,0 +1,52 @@
+{
+  "environment": "Edge Chromium headless, localhost, cache desabilitado, CPU 4x, viewport 390x844. Medição de laboratório; não é Lighthouse nem dados de usuários reais.",
+  "metrics": {
+    "lcp": 996,
+    "cls": 0,
+    "domContentLoaded": 134.70000000018626,
+    "load": 140,
+    "transferBytes": 501175,
+    "resources": [
+      {
+        "name": "/assets/index-Dfzddi2H.js",
+        "transferSize": 76865,
+        "duration": 11.200000000186265
+      },
+      {
+        "name": "/assets/index-DvGgPsWd.css",
+        "transferSize": 6409,
+        "duration": 3.8999999994412065
+      },
+      {
+        "name": "/personagem/guitarrista_pixel_transparente.webp",
+        "transferSize": 232402,
+        "duration": 3
+      },
+      {
+        "name": "/assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2",
+        "transferSize": 37232,
+        "duration": 2.599999999627471
+      },
+      {
+        "name": "/assets/syne-latin-wght-normal-BVsvWWA4.woff2",
+        "transferSize": 34908,
+        "duration": 2.599999999627471
+      },
+      {
+        "name": "/projects/zeryon.jpg",
+        "transferSize": 50188,
+        "duration": 2.599999999627471
+      },
+      {
+        "name": "/projects/naruto.jpg",
+        "transferSize": 61511,
+        "duration": 2.5
+      },
+      {
+        "name": "/favicon.svg",
+        "transferSize": 553,
+        "duration": 2.5
+      }
+    ]
+  }
+}

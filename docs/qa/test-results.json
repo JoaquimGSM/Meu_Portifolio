@@ -1,0 +1,571 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\programação\\Meu_Portifólio_Trabalho\\Portifólio_Joaquim\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\programação\\Meu_Portifólio_Trabalho\\Portifólio_Joaquim\\playwright.config.ts",
+    "rootDir": "D:/programação/Meu_Portifólio_Trabalho/Portifólio_Joaquim/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/programação/Meu_Portifólio_Trabalho/Portifólio_Joaquim/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/programação/Meu_Portifólio_Trabalho/Portifólio_Joaquim/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\programação\\Meu_Portifólio_Trabalho\\Portifólio_Joaquim\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\programação\\Meu_Portifólio_Trabalho\\Portifólio_Joaquim\\tests",
+        "snapshotDir": "D:\\programação\\Meu_Portifólio_Trabalho\\Portifólio_Joaquim\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "channel": "msedge",
+          "headless": true,
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/qa/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm.cmd run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "portfolio.spec.ts",
+      "file": "portfolio.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "conteúdo, imagens, links e console em 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:28.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-b8c54dfc92ee414c7bdb",
+          "file": "portfolio.spec.ts",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "cinco cases: conteúdo, teclado, foco e Escape em 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2138,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:30.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-a39d558fc4ed00256a29",
+          "file": "portfolio.spec.ts",
+          "line": 83,
+          "column": 3
+        },
+        {
+          "title": "conteúdo, imagens, links e console em 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1615,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:32.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-5229adaf428bd0f72b14",
+          "file": "portfolio.spec.ts",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "cinco cases: conteúdo, teclado, foco e Escape em 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:34.482Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-c0abce5971e2e56e4d10",
+          "file": "portfolio.spec.ts",
+          "line": 83,
+          "column": 3
+        },
+        {
+          "title": "conteúdo, imagens, links e console em 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:36.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-ada62032a407c25c75d5",
+          "file": "portfolio.spec.ts",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "cinco cases: conteúdo, teclado, foco e Escape em 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:38.186Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-275275716b8165a8cec2",
+          "file": "portfolio.spec.ts",
+          "line": 83,
+          "column": 3
+        },
+        {
+          "title": "conteúdo, imagens, links e console em 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1584,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:40.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-2231ecadfd65855f4a1b",
+          "file": "portfolio.spec.ts",
+          "line": 36,
+          "column": 3
+        },
+        {
+          "title": "cinco cases: conteúdo, teclado, foco e Escape em 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2092,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:41.985Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-5bf8e40fbf610eda8082",
+          "file": "portfolio.spec.ts",
+          "line": 83,
+          "column": 3
+        },
+        {
+          "title": "menu móvel: abertura, foco, Escape e navegação real",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1888,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:44.086Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-81f5ec6ce7ac05061aa6",
+          "file": "portfolio.spec.ts",
+          "line": 115,
+          "column": 1
+        },
+        {
+          "title": "personagem preservado: pausa, retomada e pausa fora da viewport",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1479,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:45.984Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-7a9b3e7a0c4c04234b14",
+          "file": "portfolio.spec.ts",
+          "line": 137,
+          "column": 1
+        },
+        {
+          "title": "movimento reduzido: quadro estático e conteúdo disponível",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 809,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:47.475Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-285b5eeda1991c1d2930",
+          "file": "portfolio.spec.ts",
+          "line": 153,
+          "column": 1
+        },
+        {
+          "title": "axe WCAG 2.2 AA: homepage e cases em 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3781,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:48.293Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-audits",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJjb250ZXh0IjogImhvbWVwYWdlIiwKICAgICJ2aW9sYXRpb25zIjogW10KICB9LAogIHsKICAgICJjb250ZXh0IjogIlplcnlvbiIsCiAgICAidmlvbGF0aW9ucyI6IFtdCiAgfSwKICB7CiAgICAiY29udGV4dCI6ICJOYXJ1dG8gQ29ubmVjdGlvbnMiLAogICAgInZpb2xhdGlvbnMiOiBbXQogIH0sCiAgewogICAgImNvbnRleHQiOiAiQ2l0eXplciIsCiAgICAidmlvbGF0aW9ucyI6IFtdCiAgfSwKICB7CiAgICAiY29udGV4dCI6ICJFbnRyZWFyIiwKICAgICJ2aW9sYXRpb25zIjogW10KICB9LAogIHsKICAgICJjb250ZXh0IjogIkzDom1pbmEiLAogICAgInZpb2xhdGlvbnMiOiBbXQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-e478bd0a980d47662ba8",
+          "file": "portfolio.spec.ts",
+          "line": 171,
+          "column": 3
+        },
+        {
+          "title": "axe WCAG 2.2 AA: homepage e cases em 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3896,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T15:25:52.084Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-audits",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJjb250ZXh0IjogImhvbWVwYWdlIiwKICAgICJ2aW9sYXRpb25zIjogW10KICB9LAogIHsKICAgICJjb250ZXh0IjogIlplcnlvbiIsCiAgICAidmlvbGF0aW9ucyI6IFtdCiAgfSwKICB7CiAgICAiY29udGV4dCI6ICJOYXJ1dG8gQ29ubmVjdGlvbnMiLAogICAgInZpb2xhdGlvbnMiOiBbXQogIH0sCiAgewogICAgImNvbnRleHQiOiAiQ2l0eXplciIsCiAgICAidmlvbGF0aW9ucyI6IFtdCiAgfSwKICB7CiAgICAiY29udGV4dCI6ICJFbnRyZWFyIiwKICAgICJ2aW9sYXRpb25zIjogW10KICB9LAogIHsKICAgICJjb250ZXh0IjogIkzDom1pbmEiLAogICAgInZpb2xhdGlvbnMiOiBbXQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-c7fd3bccba721c2a965b",
+          "file": "portfolio.spec.ts",
+          "line": 171,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T15:25:27.932Z",
+    "duration": 28463.072,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

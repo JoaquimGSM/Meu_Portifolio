@@ -1,0 +1,20 @@
+[
+  {
+    "file": "guitarrista_pixel_transparente.webp",
+    "unchanged": true,
+    "sha256": "40d9c08878dc1af3dc78c2ec4be32d72481136c60092515d791fa9cd0ff0054d",
+    "bytes": 232102
+  },
+  {
+    "file": "guitarrista_pixel_transparente.gif",
+    "unchanged": true,
+    "sha256": "22b346e982e72f8125e115271c8f5b9488f5e4cd7e0451eb765e2b6b3343cb69",
+    "bytes": 309720
+  },
+  {
+    "file": "guitarrista_pixel_estatico.png",
+    "unchanged": true,
+    "sha256": "8a126b4c5e8a70a78adfb1dc06b83af9744a35c0e6d3c2012f96fcf9b32a8ca8",
+    "bytes": 79617
+  }
+]

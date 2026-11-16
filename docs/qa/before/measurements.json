@@ -1,0 +1,52 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "pageWidth": 1440,
+    "fontsLoaded": true,
+    "brokenImages": [
+      "http://127.0.0.1:4173/projects/entrear.jpg",
+      "http://127.0.0.1:4173/projects/lamina.jpg"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "pageWidth": 1024,
+    "fontsLoaded": true,
+    "brokenImages": [
+      "http://127.0.0.1:4173/projects/entrear.jpg",
+      "http://127.0.0.1:4173/projects/lamina.jpg"
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "pageWidth": 768,
+    "fontsLoaded": true,
+    "brokenImages": [
+      "http://127.0.0.1:4173/projects/entrear.jpg",
+      "http://127.0.0.1:4173/projects/lamina.jpg"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "pageWidth": 390,
+    "fontsLoaded": true,
+    "brokenImages": [
+      "http://127.0.0.1:4173/projects/entrear.jpg",
+      "http://127.0.0.1:4173/projects/lamina.jpg"
+    ]
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "pageWidth": 376,
+    "fontsLoaded": true,
+    "brokenImages": [
+      "http://127.0.0.1:4173/projects/entrear.jpg",
+      "http://127.0.0.1:4173/projects/lamina.jpg"
+    ]
+  }
+]

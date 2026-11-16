@@ -1,0 +1,89 @@
+{
+  "checkedOn": "2026-11-16",
+  "browser": "Microsoft Edge / Chromium headless via Playwright",
+  "isolation": "Contextos descartáveis; requisições de escrita bloqueadas; nenhum dado pessoal.",
+  "results": [
+    {
+      "id": "zeryon",
+      "url": "https://web-dev-sprint3-zeryon.vercel.app/",
+      "status": "passed",
+      "blockedRequests": [],
+      "runtimeErrors": [],
+      "httpStatus": 200,
+      "checks": {
+        "quizQuestionsCompleted": 10,
+        "answers": [
+          {
+            "question": "O que você mais gosta de fotografar com este perfil?",
+            "answer": "Animais"
+          },
+          {
+            "question": "Qual estilo visual mais combina com este perfil?",
+            "answer": "Natural"
+          },
+          {
+            "question": "Como você prefere as cores das suas fotografias?",
+            "answer": "Naturais"
+          },
+          {
+            "question": "Qual temperatura de cor você prefere?",
+            "answer": "Quente"
+          },
+          {
+            "question": "Quanto contraste você gosta?",
+            "answer": "Baixo"
+          },
+          {
+            "question": "Como você prefere a exposição das suas fotografias?",
+            "answer": "Mais clara"
+          },
+          {
+            "question": "Em qual situação você costuma fotografar mais?",
+            "answer": "Durante o dia"
+          },
+          {
+            "question": "Quanto você quer que a câmera interfira automaticamente na imagem?",
+            "answer": "Quase nada"
+          },
+          {
+            "question": "O que mais chama sua atenção em uma fotografia?",
+            "answer": "Cores"
+          },
+          {
+            "question": "Que sensação você gostaria que suas fotografias transmitissem?",
+            "answer": "Realismo"
+          }
+        ],
+        "editedNameBeforeSaving": true,
+        "savedProfileCount": 1,
+        "persistenceAfterReload": true,
+        "savedProfileThumbnailLoaded": true,
+        "storage": "localStorage em contexto descartável do navegador",
+        "limitation": "Este teste não usa câmera física ou processamento de IA e não comprova esses recursos."
+      },
+      "screenshot": "docs/research/zeryon-interaction.png"
+    },
+    {
+      "id": "naruto",
+      "url": "https://naruto-connections.vercel.app/",
+      "status": "passed",
+      "blockedRequests": [],
+      "runtimeErrors": [],
+      "httpStatus": 200,
+      "checks": {
+        "selectedCharacters": [
+          "Jiraiya",
+          "Itachi Uchiha"
+        ],
+        "connectionCreated": true,
+        "edgeId": "jiraiya-itachi",
+        "selectionMethod": "Clique real no centro do traço SVG da conexão",
+        "initialJustification": "Conexão de teste local entre dois personagens.",
+        "editedJustification": "Justificativa revisada em teste local.",
+        "editingConfirmedOnScreen": true,
+        "limitation": "Estado local da sessão; o teste não afirma persistência após recarregar."
+      },
+      "screenshot": "docs/research/naruto-interaction.png"
+    }
+  ]
+}
