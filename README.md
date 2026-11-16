@@ -35,6 +35,20 @@ npm run preview
 - Entradas breves, revelação pontual das imagens, feedback de hover/foco e rolagem nativa. Sem GSAP no portfólio: CSS e IntersectionObserver atendem à proposta.
 - SEO básico, favicon e imagem OG. Configure o domínio e as URLs OG absolutas ao publicar; não há domínio inventado no código.
 
+## Direção de arte dos fundos
+
+A revisão visual acrescenta uma abertura perolada com refração ametista, galeria iluminada, uma atmosfera uva para Naruto, horizonte abstrato em Cityzer, molduras quentes/frias nos estudos web, painéis translúcidos em Sobre e um encerramento violeta com CTA amarelo. O personagem e as capturas originais continuam preservados.
+
+`src/atmosphere.css` concentra os fundos, materiais e a adaptação dessas composições ao mobile. `Atmosphere.tsx` contém apenas formas decorativas próprias em CSS/SVG; não há nova dependência, imagem de fundo externa, canvas ou loop contínuo. As entradas são breves e respeitam movimento reduzido.
+
+Compare as iterações e a validação em [docs/qa/ATMOSPHERES.md](docs/qa/ATMOSPHERES.md). Para refazer as capturas dessa revisão, com o preview na porta 4173 e o build atual:
+
+```bash
+npm run qa:atmospheres
+```
+
+O comando também atualiza `public/og-cover.jpg`; faça um novo build antes de publicar.
+
 ## Estrutura
 
 ```text
@@ -47,6 +61,7 @@ src/data/projects.ts      Conteúdo e links tipados de todos os cases
 src/hooks/                Preferência de movimento e observação de imagens
 src/utils/                Ciclo de foco dos diálogos
 src/styles.css            Sistema visual e breakpoints
+src/atmosphere.css        Fundos, formas, luz e materiais
 tests/                    Testes de navegação, acessibilidade e responsividade
 scripts/                  Capturas e verificações reproduzíveis
 docs/DESIGN.md            Direção de arte e decisões das skills

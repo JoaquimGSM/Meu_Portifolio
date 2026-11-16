@@ -12,7 +12,8 @@
     "test": "playwright test",
     "qa": "playwright test",
     "verify:assets": "node scripts/verify-assets.mjs",
-    "qa:screenshots": "node scripts/capture-portfolio.mjs final"
+    "qa:screenshots": "node scripts/capture-portfolio.mjs final",
+    "qa:atmospheres": "node scripts/capture-atmospheres.mjs final"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.2.8",

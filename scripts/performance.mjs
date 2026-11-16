@@ -1,6 +1,7 @@
 import { chromium } from '@playwright/test';
 import { writeFile } from 'node:fs/promises';
 
+const outputPath = process.argv[2] ?? 'docs/qa/performance.json';
 const browser = await chromium.launch({ channel: 'msedge', headless: true });
 try {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
@@ -35,6 +36,6 @@ try {
     environment: 'Edge Chromium headless, localhost, cache desabilitado, CPU 4x, viewport 390x844. Medição de laboratório; não é Lighthouse nem dados de usuários reais.',
     metrics,
   };
-  await writeFile('docs/qa/performance.json', JSON.stringify(report, null, 2));
+  await writeFile(outputPath, JSON.stringify(report, null, 2));
   console.log(JSON.stringify(report, null, 2));
 } finally { await browser.close(); }

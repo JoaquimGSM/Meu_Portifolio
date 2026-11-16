@@ -1,5 +1,25 @@
 # Direção de arte
 
+## Revisão de atmosferas solicitada pelo autor
+
+O novo pedido e o texto anexado autorizam uma transformação profunda dos fundos: gradientes, halos, formas, glow e camadas passam a integrar o sistema. As orientações anteriores de superfícies predominantemente planas foram substituídas por esta direção. A curadoria, os fatos confirmados, os arquivos aprovados do personagem e as interações continuam como base.
+
+**Conceito: luz em frequência.** A relação com música aparece na continuidade de arcos e campos de cor, sem instrumentos decorativos adicionais nem simulação de cenário gamer. O texto ocupa a região de menor contraste visual; a luz se concentra ao redor do trabalho e do personagem.
+
+- Hero: base perolada, luz quente junto da apresentação e uma grande forma refrativa ametista atrás do personagem. Moldura clara com profundidade, palco interno iluminado e links legíveis.
+- Zeryon: galeria clara com iluminação roxa no enquadramento da captura real.
+- Naruto: mudança para fundo uva/carvão, campo de luz difuso e linhas de conexão decorativas discretas. A captura real continua sendo a evidência do projeto.
+- Cityzer: atmosfera noturna violeta e horizonte luminoso abstrato. As curvas são gráficas, não um mapa ou produto simulado.
+- Estudos web: Entrear recebe uma luz quente, Lâmina uma luz fria. As duas molduras pertencem ao mesmo sistema editorial.
+- Sobre: campo de luz lilás, painel de formação com material translúcido e ferramentas em superfícies mais bem espaçadas.
+- Contato: pôster imersivo de roxo profundo e luz violeta, com arcos amplos e uma ação em amarelo.
+
+Tokens adicionais: pérola #F5F0FA, ametista #AE84DD, lavanda #D7C4F0, uva #2D1645, luz quente #FFF1BA e branco quente #FFFDF7. Os quatro tons aprovados seguem reconhecíveis.
+
+Implementação: `atmosphere.css` concentra a direção de luz e materiais; `styles.css` conserva a estrutura e escala. Elementos decorativos próprios, sem imagens externas e sem bibliotecas novas. As formas ficam atrás do conteúdo, sem receber eventos ou participar da árvore acessível. Movimento curto de entrada nas camadas; nenhum loop de fundo ou renderização contínua. Movimento reduzido preserva a composição estática.
+
+Processo: registrar o estado atual, implementar uma primeira direção no código, revisar capturas reais em desktop/mobile, ajustar intensidade, composição, contraste e encaixes, executar a suíte existente e atualizar a imagem OG. O relatório em `docs/qa/ATMOSPHERES.md` registra as comparações e o resultado.
+
 Tipo: service / portfólio pessoal de desenvolvimento de software.
 Paleta do cliente: #6410C9, #FFDF00, #E9E9E9, #17121F. Hero editorial dividido, card autoral do guitarrista, projetos em composições distintas e encerramento tipográfico.
 

@@ -3,6 +3,7 @@ import type { Project } from '../data/projects';
 import { Arrow } from './Icon';
 import { ExternalLink } from './ExternalLink';
 import { ProjectImage } from './ProjectImage';
+import { Atmosphere } from './Atmosphere';
 
 function ProjectActions({ project, onSelect }: { project: Project; onSelect: (project: Project) => void }) {
   return <div className="project-actions"><button className="text-link" onClick={() => onSelect(project)} aria-label={`Ver case ${project.name}`}>Ver case<Arrow /></button>{project.demo ? <ExternalLink href={project.demo}>Abrir site</ExternalLink> : null}</div>;
@@ -19,6 +20,7 @@ export function Projects({ onSelect }: { onSelect: (project: Project) => void })
         <div className="feature-copy"><p className="project-category">{zeryon.category}</p><h3 id="zeryon-title">Zeryon<span className="project-subtitle">Photo Profile</span></h3><p>{zeryon.summary}</p><ul className="technology-list" aria-label="Tecnologias de Zeryon">{zeryon.technologies.map((tech) => <li key={tech}>{tech}</li>)}</ul><ProjectActions project={zeryon} onSelect={onSelect} /></div>
       </article>
       <article className="project-feature naruto-feature" aria-labelledby="naruto-title">
+        <Atmosphere variant="connections" />
         <div className="feature-copy"><p className="project-category">{naruto.category}</p><h3 id="naruto-title">Naruto<br /> Connections</h3><p>{naruto.summary}</p><ul className="technology-list" aria-label="Tecnologias de Naruto Connections">{naruto.technologies.slice(0, 3).map((tech) => <li key={tech}>{tech}</li>)}</ul><ProjectActions project={naruto} onSelect={onSelect} /></div>
         <button className="project-image-button" aria-label="Ver case Naruto Connections" onClick={() => onSelect(naruto)}><ProjectImage project={naruto} /><span className="image-open" aria-hidden="true"><Arrow diagonal /></span></button>
       </article>

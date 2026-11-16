@@ -2,6 +2,8 @@ GATE: ERROR (the copy (the page showed no <main>, <section> or <h1> to lint); co
 
 # Relatório de qualidade e revisão visual
 
+Este documento registra a primeira entrega. A transformação visual posterior, seus testes atuais e as capturas mais recentes estão em [ATMOSPHERES.md](ATMOSPHERES.md).
+
 Entrega local em 16/11/2026. Sem commits, push, registro de hospedagem ou deploy.
 
 ## Resultado da aplicação

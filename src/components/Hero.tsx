@@ -1,8 +1,10 @@
 import { AvatarCard } from './AvatarCard';
 import { Arrow } from './Icon';
+import { Atmosphere } from './Atmosphere';
 
 export function Hero() {
   return <section className="hero" id="inicio" aria-labelledby="hero-title" data-enter>
+    <Atmosphere variant="hero" />
     <div className="container hero-grid">
       <div className="hero-copy">
         <p className="hero-role"><span className="tiny-square" />Desenvolvimento de software & front-end</p>

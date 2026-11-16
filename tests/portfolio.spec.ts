@@ -120,6 +120,8 @@ test('menu móvel: abertura, foco, Escape e navegação real', async ({ page }) 
   const menu = page.locator('#mobile-menu');
   await expect(menu).toBeVisible();
   await expect(menuButton).toHaveAttribute('aria-expanded', 'true');
+  // Audit the completed menu state; auditing its moving backdrop can include inert background controls.
+  await menu.evaluate(element => Promise.all(element.getAnimations().map(animation => animation.finished)));
   const menuAudit = await new AxeBuilder({ page }).analyze();
   expect(menuAudit.violations, JSON.stringify(menuAudit.violations, null, 2)).toEqual([]);
   await page.keyboard.press('Escape');
